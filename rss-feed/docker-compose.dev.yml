@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  app:
+    image: rss-feed-front-dev
+    build: 
+      context: ./rss-feed-front
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./rss-feed-front:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 5173:5173
+
+  server:
+    image: rss-feed-back-dev
+    build: 
+      context: ./rss-feed-back
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./rss-feed-back:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3001:3001

@@ -1,0 +1,15 @@
+Script started on 2024-05-28 11:51:42+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="29"]
+[?2004h]0;j@WorldEnder: ~[01;32mj@WorldEnder[00m:[01;34m~[00m$ exit[Kdocker ru [Kn -it ubuntu bash
+[?2004ldocker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Head "http://%2Fvar%2Frun%2Fdocker.sock/_ping": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+[?2004h]0;j@WorldEnder: ~[01;32mj@WorldEnder[00m:[01;34m~[00m$ docker run -it ubuntu bash[1@s[1@u[C[1@d[1@o[1@ 
+[?2004l[sudo] password for j: 
+[?2004h]0;root@50386e9f7019: /root@50386e9f7019:/# mkdir -p /ur sr/src/app
+[?2004l[?2004h]0;root@50386e9f7019: /root@50386e9f7019:/# cd /usr/src/app
+[?2004l[?2004h]0;root@50386e9f7019: /usr/src/approot@50386e9f7019:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@50386e9f7019: /usr/src/approot@50386e9f7019:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;j@WorldEnder: ~[01;32mj@WorldEnder[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-05-28 11:52:53+03:00 [COMMAND_EXIT_CODE="0"]

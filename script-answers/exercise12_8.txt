@@ -1,0 +1,52 @@
+Script started on 2024-06-05 11:18:26+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="89" LINES="27"]
+[?2004h]0;j@WorldEnder: ~/Documents/projects/part12-containers-applications-main/todo-app/todo-backend[01;32mj@WorldEnder[00m:[01;34m~/Documents/projects/part12-containers-applications-main/todo-app/todo-backend[00m$ exitsudo docker exec -it 3d5 bash
+[?2004l[sudo] password for j: 
+]0;root@3d5f87e134c3: /root@3d5f87e134c3:/# mongo -u root -p example
+MongoDB shell version v4.4.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a3d1b4f9-9ce1-4584-bdcd-bd6ffe5409cc") }
+MongoDB server version: 4.4.6
+---
+The server generated these startup warnings when booting: 
+        2024-06-05T08:04:38.733+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> data[3G[Jdat[6G[3G[Jda[5G[3G[Jd[4Gb.todos.find({})[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("66583605ed54c92cb13dd1af"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("66583605ed54c92cb13dd1b0"), "text" : "Learn about containers", "done" : false }
+> db.todos.insertOne({ text:"INc[3G[Jdb.todos.insertOne({ text:"IN[32G[3G[Jdb.todos.insertOne({ text:"I[31Gncrease the no[3G[Jdb.todos.insertOne({ text:"Increase the n[44Gumber of tools in my toolbl[3G[Jdb.todos.insertOne({ text:"Increase the number of tools in my toolb[70Gelt", done:false })[3G[Jdb.todos.insertOne({ text:"Increase the number of tools in my toolbelt", done:false })[89G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("66602012eed9909655f1b826")
+}
+> db.todos.find({})[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("66583605ed54c92cb13dd1af"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("66583605ed54c92cb13dd1b0"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("66602012eed9909655f1b826"), "text" : "Increase the number of tools in my toolbelt", "done" : false }
+> exit[3G[Jexit[7G
+bye
+]0;root@3d5f87e134c3: /root@3d5f87e134c3:/# exit
+exit
+[?2004h]0;j@WorldEnder: ~/Documents/projects/part12-containers-applications-main/todo-app/todo-backend[01;32mj@WorldEnder[00m:[01;34m~/Documents/projects/part12-containers-applications-main/todo-app/todo-backend[00m$ exit
+[?2004lexit
+
+Script done on 2024-06-05 11:22:05+03:00 [COMMAND_EXIT_CODE="0"]
